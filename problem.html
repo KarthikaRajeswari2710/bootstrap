@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chennai Path Finder</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: wheat;
+        
+        }
+
+        .hero {
+            height: 380px;
+            background-image: url("https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea?w=1200");
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            position: relative;
+            margin-top: 25px;
+        }
+
+        .hero-content {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px #000;
+        }
+
+        .hero p {
+            font-size: 20px;
+            font-weight: 500;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .feature-card {
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            background: white;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .motivation-box {
+            border-radius: 15px;
+            padding: 30px;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: white;
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <a class="navbar-brand" style="font-weight: 600;">Chennai Path Finder</a>
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#login">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#signup">Register</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rewards">Rewards</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container">
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Chennai-ku ethuku varom?</h1>
+            <p>Un future path ah perfect-ah choose panna — idhu than correct place.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <h3 class="text-center mb-4 font-weight-bold">Choose Your Direction</h3>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="feature-card">
+                <h4 class="font-weight-bold">📘 Education Roadmap</h4>
+                <p>Chennai la padikkanu plan pannura? College selection, course ideas, future scope – ellam analyse pannalaam.</p>
+                <button class="btn btn-primary mt-2">Explore Education</button>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="feature-card">
+                <h4 class="font-weight-bold">💼 Work / Job Roadmap</h4>
+                <p>Chennai la job find panna easy illa… aana correct skills iruntha salary, growth, opportunities– ellam kidaikum.</p>
+                <button class="btn btn-success mt-2">Explore Work</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-5" id="rewards">
+    <h3 class="text-center font-weight-bold">🎁 Reward Points Zone</h3>
+
+    <div class="feature-card mt-3 text-center">
+        <h5>Earn Points for Completing Tasks</h5>
+        <button class="btn btn-warning mt-2">Add 50 Points</button>
+        <p class="font-weight-bold mt-3">Your Current Points: 0</p>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <h3 class="text-center font-weight-bold">🔥 Daily Chennai Motivation</h3>
+    <div class="motivation-box mt-3">
+        "Chennai-ku vantha odane life improve aagidum… aana hard work dha chief key!"
+    </div>
+</div>
+
+
+<footer class="text-center">
+    Chennai Path Finder © 2025 • Built with ❤️ for Students & Job Seekers
+</footer>
+
+
+<!--  MODAL -->
+<div class="modal fade" id="login">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-dark text-white">
+                <h5>Login</h5>
+                <button class="close text-white" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <input type="text" class="form-control mb-2" placeholder="Enter Username">
+                <input type="password" class="form-control mb-2" placeholder="Enter Password">
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-dark">Login</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="signup">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-primary text-white">
+                <h5>Register</h5>
+                <button class="close text-white" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <input type="text" class="form-control mb-2" placeholder="Full Name">
+                <input type="email" class="form-control mb-2" placeholder="Email">
+                <input type="password" class="form-control mb-2" placeholder="Password">
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-primary">Create Account</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
